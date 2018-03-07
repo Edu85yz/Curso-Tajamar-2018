@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<style>
+      *{box-sizing: border-box}
+      .container {
+          width: 90%;
+          margin-right: auto;
+          margin-left: auto;
+          border: .1rem solid;
+         /*  overflow:hidden; */
+
+      }
+        .container::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+      p{
+          background-color: salmon;
+          
+           width: 20%;
+           padding: 1rem;
+           float: left;
+    }
+
+    p:not(:last-of-type){
+         margin-right: 6.66%;
+    }
+
+
+</style>
+
+
+<body>
+    <div class ="container">
+         <p>Lorem ipsum</p>
+         <p>Lorem ipsum</p>
+         <p>Lorem ipsum</p>
+         <p>Lorem ipsum</p>
+         <blockquote>algo</blockquote>
+    </div>
+</body>
+
+</html>
