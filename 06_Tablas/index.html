@@ -35,6 +35,18 @@
      }
      table.t2 td:nth-of-type(even){
          background-color:pink;
+     }
+
+         table.t2 [colspan="2"]{
+             color: 33788F;
+         }
+
+         .esquina {
+             background-color: aquamarine;
+         }
+   .rarito{
+             color:rgb(140,155,10);
+     }
     
     </style>
 </head>
@@ -73,7 +85,7 @@
             <th rowspan="2">Alumno 3</th>
             <th>Practica</th>
             <td>6</td>
-            <td>7</td>
+            <td class="rarito">7</td>
             <td>8</td>
         </tr>
     </table>
@@ -81,7 +93,7 @@
 
     <table class="t2">
             <tr>
-                <th scope="col"></th>
+                <th colspan="2" class="esquina">Notas</th>
                 <th></th>
                 <th>Examen 1</th>
                 <th>Examen 2</th>
